@@ -1,11 +1,12 @@
 import React from "react";
+
 import MovieListItem from "./MovieListItem";
 import MovieListFooter from "./MovieListFooter";
+
 import { useSelector } from "react-redux";
 
 const MovieList = (props) => {
   const movies = useSelector((store) => store.movieReducer.movies);
-  // console.log("data alamıyom", store.movies);
 
   return (
     <div className="flex-1">

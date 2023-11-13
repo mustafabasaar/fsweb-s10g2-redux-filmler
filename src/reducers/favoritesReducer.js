@@ -18,6 +18,7 @@ const initialState = {
   ],
   displayFavorites: false,
 };
+
 const reducer = (state = initialState, action) => {
   switch (action.type) {
     case TOGGLE_FAVORITES:
@@ -44,4 +45,5 @@ const reducer = (state = initialState, action) => {
       return state;
   }
 };
+
 export default reducer;
